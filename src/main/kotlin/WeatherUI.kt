@@ -41,7 +41,7 @@ class WeatherUI {
 
             validatingDegree(degree)
             try {
-                val apiKey = loadApiKey("src/main/secrets/apikey.properties")
+                val apiKey = loadApiKey("src/main/apikey.properties")
                 validatingAPIKey(apiKey)
                 validatingCity(city, apiKey) // Validate the city
 

@@ -20,12 +20,13 @@ dependencies {
 
 
 application {
-    mainClass.set("WeatherUIKt")
+    mainClass.set("MainKt")
+
 }
 
 tasks.withType<Jar> {
     manifest {
-        attributes["Main-Class"] = "WeatherUIKt"
+        attributes["Main-Class"] = "MainKt"
     }
     from(sourceSets.main.get().output)
 }
